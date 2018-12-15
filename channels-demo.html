@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+   
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="messages.js"></script>	
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Montserrat', sans-serif;
+			}
+			html, body {
+				height : 100%;
+				margin : 0px;
+			}
+			div {
+				display :inline-block;
+			}			
+			.main-header {
+				height : 30px;
+			}
+			.main-section {
+				display :inline-block;
+				width : 85%;	
+				float : right;		
+				padding : 10px 20px;	
+				height: 100%;
+				margin-top : 2.5rem;
+			}
+			#messages-list {
+				margin : auto 0;
+    			height: 30em;
+    			overflow-y: scroll;
+    			border: 1px blue solid;		
+    			padding: 0.2rem 1rem;		
+			}
+			.message-row {
+				display: inline-block;
+				width :100%;
+				margin-bottom: 20px;
+			}
+			.message-image {
+				display : inline-block;
+				width : 10%;	
+				float : left;
+				min-width: 30px;
+				max-width: 30px;			
+			}
+			.message-image img {
+				max-width: 60px;
+			}
+			.message-meta-text {
+				display : inline-block;
+				width : 90%;	
+				float : right;	
+				padding : 0.2em 0.2em 0.2em 0.2em;					
+			}				
+			.message-text {
+				display : inline-block;
+				width : 100%;	
+				float : left;	
+			}	
+			.message-time {
+				display : inline-block;
+				font-size: 0.8rem;	
+			}				
+			.message-author {
+				display: inline-block;
+				vertical-align: top;				
+				font-weight: bold;	
+				padding : 0.2em 2em 0.2em 0em;
+				width : 5rem;	
+			}		
+			.message-box {
+				width : 80%;
+				font-size: 1em;
+				margin : 1em, auto;
+				height : 5em;
+			}
+			footer {
+				margin : 1em 0em;
+			}
+
+			#message {
+				width : 100%;
+				font-size: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="main-section">	
+			<section id="messages-list">
+		
+			</section>
+			<footer>
+				<form method="POST" action="/message/new">
+				<textarea id="message" rows="4" cols="100" placeholder="Type message" class="message-box"></textarea> 
+			</footer>			
+		</section>
+	</body>
+</html>
