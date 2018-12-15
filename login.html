@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+	     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+<style>
+
+			* {
+				box-sizing: border-box;
+				font-family: 'Montserrat', sans-serif;
+			}
+			html, body {
+				height : 100%;
+				margin : 0px;
+			}
+
+			.main-section {
+				margin-top : 2rem;
+			}
+
+			.logo .img-fluid {
+				width : 100%;
+				display: block; 
+				margin : 1rem auto 1rem auto;
+			}
+
+			h1 {
+				font-size: 4rem;
+			}
+
+			div.banner {
+				float : right;
+				display: inline-block;
+				width: 50%;
+				padding :2rem;
+			}
+			div.logo {
+				float : left;
+				display: inline-block;
+				width: 50%;
+				padding:1rem;
+			}
+
+		@media only screen and (max-width: 768px) {
+
+			.logo .img-fluid {
+				width : 60%;
+				display: block; 
+				margin : 1rem auto 1rem auto;
+			}
+
+			div.banner {
+				display: inline-block;
+				width: 100%;
+				padding :0rem 2rem 2rem 20%;
+			}
+			div.logo {
+				float : none;
+				display: inline-block;
+				width: 100%;
+				padding:1rem;
+			}			
+			h1 {
+				margin : 0.5rem;
+				font-size: 3rem;
+			}
+		}
+		
+</style>
+
+     </head>
+    <body>
+   <section class="main-section">
+    <header>
+    	<section>
+      <p><span>Name</span><input type="text" placeholder="username" /></p>
+      <p><span>Password</span><input type="password" placeholder="password" /></p>
+    </section>
+    <div class="logo">
+					<img src="https://cdn.lynda.com/course/365728/365728-636190610546181732-16x9.jpg" class="img-fluid">
+				</div>
+	<div class="banner">
+					<h1>#stacker</h1>
+					<h3>Collaboration Made Fun</h3>		
+				</div>
+	</header>			
+   </section>
+</body>
+    </html>
